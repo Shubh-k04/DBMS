@@ -158,7 +158,7 @@
 ###### QUERY:-
       List all data from table DEPOSIT
 ###### SYNTAX:-
-            select * from DEPOSIT;
+      select * from DEPOSIT;
 ###### OUTPUT:-
         +-------+---------+-------------+---------+------------+
         | ACTNO | CNAME   | BNAME       | AMOUNT  | ADATE      |
@@ -190,65 +190,171 @@
         +--------+---------+-------------+---------+
 
 ###### QUERY:-
-List all data from table CUSTOMERS
-
-
+     List all data from table CUSTOMERS
 ###### SYNTAX:-
-   select * from CUSTOMERS;
+     select * from CUSTOMERS;
+###### OUTPUT:-
+     +---------+----------+
+     | CNAME   | CITY     |
+     +---------+----------+
+     | ANIL    | CULCUTTA |
+     | MEHUL   | BARODA   |
+     | MANDAR  | PATNA    |
+     | MADHURI | NAGPUR   |
+     | PRAMOD  | NAGPUR   |
+     | SANDIP  | SURAT    |
+     | SHIVANI | BOMBAY   |
+     | KRANTI  | BOMBAY   |
+     | NAREN   | BOMBAY   |
+     +---------+----------+
+###### QUERY:-
+     List all data from table BRANCH
+###### SYNTAX:-
+     select * from BRANCH;
+###### OUTPUT:-
+    +-------------+----------+
+    | BNAME       | CITY     |
+    +-------------+----------+
+    | VRCE        | NAGPUR   |
+    | AJNI        | NAGPUR   |
+    | KAROLBAGH   | DELHI    |
+    | CHANDINI    | DELHI    |
+    | DHARAMPEETH | NAGPUR   |
+    | M.G.ROAD    | BANGLORE |
+    | ANDHERI     | BOMBAY   |
+    | VIRAR       | BOMBAY   |
+    | NEHRU PLACE | DELHI    |
+    | POWAI       | BOMBAY   |
+    +-------------+----------+
+###### QUERY:-
+    Give account no. and amount of depositors
+###### SYNTAX:-
+    Select ACTNO, AMOUNT from DEPOSIT;
 ###### OUTPUT:-
 
 ###### QUERY:-
-List all data from table BRANCH
-
-
+    Give cname and account no. of depositors
 ###### SYNTAX:-
-    select * from BRANCH;
+    Select CNAME, ACTNO from DEPOSIT;
 ###### OUTPUT:-
 
 ###### QUERY:-
-Give account no. and amount of depositors
-
-
-###### SYNTAX:-
-    
-###### OUTPUT:-
-
-###### QUERY:-
-Give cname and account no. of depositors
-
-
-###### SYNTAX:-
-
-###### OUTPUT:-
-
-###### QUERY:-
-Give names of customers.
-
-
+    Give names of customers.
 ###### SYNTAX:-
     select CNAME from CUSTOMERS;
 ###### OUTPUT:-
 
 ###### QUERY:-
-Give names of branches
-
-
+    Give names of branches
 ###### SYNTAX:-
-     select BNAME from BRANCH;
+    select BNAME from BRANCH;
 ###### OUTPUT:-
 
 ###### QUERY:-
-Give names of borrowers
-
-
+    Give names of borrowers
 ###### SYNTAX:-
-   select CNAME from BORROW;
+    select CNAME from BORROW;
 ###### OUTPUT:-
 
 ###### QUERY:-
-Give names of customers living in city NAGPUR
-
-
+    Give names of customers living in city NAGPUR
 ###### SYNTAX:-
     select * from CUSTOMERS where city = "NAGPUR";
 ###### OUTPUT:-
+
+### Update Commands:-
+
+##### QUERY:-
+    Give 10% interest to all depositors
+##### SYNTAX:-
+    Update DEPOSIT set AMOUNT = (110*AMOUNT)/100;
+##### OUTPUT:-
+
+##### QUERY:-
+    Give 10% interest to all depositors having branch VRCE
+##### SYNTAX:-
+    Update DEPOSIT set AMOUNT = (110*AMOUNT)/100 where BRANCH = "VRCE";
+##### OUTPUT:-
+
+##### QUERY:-
+    Give 10% interest to all depositors living in NAGPUR
+##### SYNTAX:-
+    Update DEPOSIT set AMOUNT = (110*AMOUNT)/100 where;
+##### OUTPUT:-
+
+##### QUERY:-
+    Give 10% interest to all depositors living in NAGPUR having branch in BOMBAY
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+    Add hundered rupees to the deposit of Anil and assign it to Sunil
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+    Change the deposit of VRCE to 1000 and change the branch VRCE as AMBAZAR
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+    Assign to the deposit of Anil the maximum deposit from the VRCE bank
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+    Change the living City of VRCE branch borrowers to NAGPUR
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+    Update DEPOSIT of Anil, give him the maximum deposit from depositors living in coty NAGPUR
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+    Deposit the sum of deposits of Sunil and Vijay in the account of Anil
+##### SYNTAX:-
+##### OUTPUT:-
+
+### Delete Commands:-
+
+##### QUERY:-
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+##### SYNTAX:-
+##### OUTPUT:-
+
+##### QUERY:-
+##### SYNTAX:-
+##### OUTPUT:-
