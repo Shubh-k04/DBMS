@@ -156,12 +156,99 @@
 ### Select Commands:-     
 
 ###### QUERY:-
-List all data from table DEPOSIT
-List all data from table BORROW
+      List all data from table DEPOSIT
+###### SYNTAX:-
+            select * from DEPOSIT;
+###### OUTPUT:-
+        +-------+---------+-------------+---------+------------+
+        | ACTNO | CNAME   | BNAME       | AMOUNT  | ADATE      |
+        +-------+---------+-------------+---------+------------+
+        | 100   | Anil    | VREC        | 1000.00 | 1995-03-01 |
+        | 101   | Sunil   | AJNI        |  500.00 | 1996-01-04 |
+        | 102   | Mehul   | KAROLBAGH   | 3500.00 | 1995-11-17 |
+        | 104   | Madhuri | CHANDN      | 1200.00 | 1995-12-17 |
+        | 105   | Pramod  | M.G.ROAD    | 3000.00 | 1996-03-27 |
+        | 106   | Sandeep | ANDHERI     | 2000.00 | 1996-03-31 |
+        | 107   | Shivani | VIRAR       | 1000.00 | 1995-09-05 |
+        | 108   | Kranti  | NEHRU PLACE | 5000.00 | 1995-07-02 |
+        | 109   | Minu    | POWAI       | 7000.00 | 1995-08-10 |
+        +-------+---------+-------------+---------+------------+
+###### QUERY:-
+      List all data from table BORROW
+###### SYNTAX:-
+      select * from BORROW;
+###### OUTPUT:-
+        +--------+---------+-------------+---------+
+        | LOANNO | CNAME   | BNAME       | AMOUNT  |
+        +--------+---------+-------------+---------+
+        | 201    | AJNI    | VRCE        | 1000.00 |
+        | 206    | MEHUL   | AJNI        | 5000.00 |
+        | 311    | SUNIL   | DHARAMPEETH | 3000.00 |
+        | 321    | MADHURI | ANDHERI     | 2000.00 |
+        | 375    | RAMOD   | VIHAR       | 8000.00 |
+        | 481    | KRANTI  | NEHRU PLACE | 3000.00 |
+        +--------+---------+-------------+---------+
+
+###### QUERY:-
 List all data from table CUSTOMERS
+
+
+###### SYNTAX:-
+
+###### OUTPUT:-
+
+###### QUERY:-
 List all data from table BRANCH
+
+
+###### SYNTAX:-
+
+###### OUTPUT:-
+
+###### QUERY:-
 Give account no. and amount of depositors
+
+
+###### SYNTAX:-
+
+###### OUTPUT:-
+
+###### QUERY:-
 Give cname and account no. of depositors
+
+
+###### SYNTAX:-
+
+###### OUTPUT:-
+
+###### QUERY:-
 Give names of customers.
+
+
+###### SYNTAX:-
+
+###### OUTPUT:-
+
+###### QUERY:-
 Give names of branches
 
+
+###### SYNTAX:-
+
+###### OUTPUT:-
+
+###### QUERY:-
+Give names of borrowers
+
+
+###### SYNTAX:-
+
+###### OUTPUT:-
+
+###### QUERY:-
+Give names of customers living in city NAGPUR
+
+
+###### SYNTAX:-
+
+###### OUTPUT:-
