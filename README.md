@@ -194,7 +194,7 @@ List all data from table CUSTOMERS
 
 
 ###### SYNTAX:-
-
+   select * from CUSTOMERS;
 ###### OUTPUT:-
 
 ###### QUERY:-
@@ -202,7 +202,7 @@ List all data from table BRANCH
 
 
 ###### SYNTAX:-
-
+    select * from BRANCH;
 ###### OUTPUT:-
 
 ###### QUERY:-
@@ -210,7 +210,7 @@ Give account no. and amount of depositors
 
 
 ###### SYNTAX:-
-
+    
 ###### OUTPUT:-
 
 ###### QUERY:-
@@ -226,7 +226,7 @@ Give names of customers.
 
 
 ###### SYNTAX:-
-
+    select CNAME from CUSTOMERS;
 ###### OUTPUT:-
 
 ###### QUERY:-
@@ -234,7 +234,7 @@ Give names of branches
 
 
 ###### SYNTAX:-
-
+     select BNAME from BRANCH;
 ###### OUTPUT:-
 
 ###### QUERY:-
@@ -242,7 +242,7 @@ Give names of borrowers
 
 
 ###### SYNTAX:-
-
+   select CNAME from BORROW;
 ###### OUTPUT:-
 
 ###### QUERY:-
@@ -250,5 +250,5 @@ Give names of customers living in city NAGPUR
 
 
 ###### SYNTAX:-
-
+    select * from CUSTOMERS where city = "NAGPUR";
 ###### OUTPUT:-
